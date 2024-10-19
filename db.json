@@ -1,19 +1,19 @@
 {
   "organization": [
     {
-      "key": 40,
+      "key": 24,
       "companyName": "Najot Talim",
-      "inn": "222333658",
+      "inn": "222333",
       "status": "1",
       "regionId": "1",
-      "address": "Chilonzor 9kv",
+      "address": "Chilonzor",
       "createdAt": "2018-11-01",
       "id": "1"
     },
     {
       "key": 50,
-      "companyName": "HardWork",
-      "inn": "112333658",
+      "companyName": "Hardwork",
+      "inn": "1123535",
       "status": "2",
       "regionId": "2",
       "address": "Chilonzor 9kv",
@@ -21,35 +21,25 @@
       "id": "2"
     },
     {
-      "id": "183a",
       "key": 64,
-      "companyName": "w",
-      "inn": "12345678",
-      "status": "2",
-      "regionId": 3,
-      "regionPlace": "Xorazm vilayati",
-      "address": "nlomi",
-      "createdAt": "2015-06-19"
-    },
-    {
-      "key": 17,
       "companyName": "mohirjon",
       "inn": "12345",
       "status": "2",
       "regionId": 2,
-      "address": "sw",
+      "address": "swsswwwdd",
       "createdAt": "2024-10-12",
       "id": "48a9"
     },
     {
-      "key": 16,
-      "companyName": "1235u",
-      "inn": "123456789",
-      "status": "3",
+      "id": "4792",
+      "key": 25,
+      "companyName": "dede",
+      "inn": "12346",
+      "status": "2",
       "regionId": 2,
-      "address": "r45",
-      "createdAt": "2024-10-10",
-      "id": "7a4b"
+      "regionPlace": "Samarqand vilayati",
+      "address": "222",
+      "createdAt": null
     }
   ]
 }

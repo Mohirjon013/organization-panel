@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import CustomSelect from '../components/CustomSelect'
 import { useAxios } from '../hooks/useAxios'
-import toast from 'react-hot-toast'
+import toast, { Toaster } from 'react-hot-toast'
 import dayjs from 'dayjs'
 
 function OrganizationAdd() {
@@ -73,7 +73,6 @@ function OrganizationAdd() {
         }
         if(id){
             useAxios().put(`/organization/${id}`, data).then(res => {
-                
                 setTimeout(() => {
                     toast.success("Tashkilot tahrirlandi")
                     setIsLoading(false)
@@ -84,8 +83,9 @@ function OrganizationAdd() {
         else{
             useAxios().post(`/organization`, data).then(res => {
                 setTimeout(() => {
-                    toast.success("Tashkilot qo'shildi")
+                    
                     setIsLoading(false)
+                    toast.success("Tashkilot qo'shildi")
                     navigate(-1)
                 }, 800);
             })
@@ -121,6 +121,7 @@ function OrganizationAdd() {
     
     return (
         <form onSubmit={handleSubmit} className='p-5'>
+            <Toaster position="top-center" reverseOrder={false}/>
             <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-5">
                     <button type='button' onClick={() => navigate(-1)} className='scale-[1.3]'><ArrowLeftOutlined/></button>

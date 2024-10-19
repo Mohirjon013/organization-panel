@@ -102,7 +102,6 @@ function Organization() {
   function handleDeleteBTn(id){
     setDeleteModal(true)
     setDeleteID(id)
-
   }
 
   function handleOkDeleteModal(){
